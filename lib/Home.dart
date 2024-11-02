@@ -11,7 +11,12 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   // inplement object
-  final List<Student> student = [];
+   final List<Student> student = [
+    Student(name: 'duc', isDone: false),
+    Student(name: 'toan', isDone: false),
+    Student(name: 'hau', isDone: true),
+    Student(name: 'kien', isDone: false),
+  ];
   // fuction add
   void _addstudent (String name){
     student.add(Student(name: name));
